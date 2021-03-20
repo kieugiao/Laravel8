@@ -11,6 +11,11 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    
+    protected $policies = [
+        'App\Task' => 'App\Policies\TaskPolicy',
+    ];
+
     public function register()
     {
         //
